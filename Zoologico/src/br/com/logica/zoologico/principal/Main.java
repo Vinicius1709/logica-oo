@@ -34,6 +34,8 @@ public class Main {
 			System.out.println("Não é adulto");
 		}
 		
+		System.out.println("---------------------------------");
+		
 		Animal peixe = new Animal("Dory");
 		
 		System.out.println("Olá o nome do meu animal é " + peixe.getNome());

@@ -1,7 +1,7 @@
 package br.com.logica.zoologico.classes;
 
 	// Construindo o objeto animal
-public class Animal {
+public abstract class Animal {
 
 	// Atributos ou propiedades do objetos
 	// Neste momento as propriedades são públicas
