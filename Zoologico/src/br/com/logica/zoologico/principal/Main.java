@@ -8,17 +8,19 @@ public class Main {
 		// Criando uma nova instancia do objeto
 		Animal a1 = new Animal();
 		
-		//Atribuindo os valores as propriedades
-		a1.nome = "Nina";
-		a1.especie = "cachorro";
-		a1.idade = 3;
+		// Atribuindo os valores as propriedades
+		a1.setNome("Nina");
+		a1.setEspecie("Cachorro");
+		a1.setIdade(3);
 		
 		// Criando uma nova instancia do objeto
 		Animal a2 = new Animal();
 		
 		// Atribuindo os valores as propriedades
-		a2.nome = "zorro";
-		a2.especie = "gato";
-		a2.idade = 3;
+		a2.setNome("Zorro");
+		a2.setEspecie("Gato");
+		a2.setIdade(1);
+		
+		System.out.println("Olá o nome do meu animal é "+ a2.getNome());
 	}
 }
