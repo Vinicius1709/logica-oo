@@ -9,15 +9,9 @@ public class Animal {
 	private String especie;
 	private int idade;
 	
-	public void setNome(String nome) {
+	public Animal(String nome, String especie, int idade) {
 		this.nome = nome;
-	}
-	
-	public void setEspecie(String especie) {
 		this.especie = especie;
-	}
-	
-	public void setIdade(int idade) {
 		this.idade = idade;
 	}
 	

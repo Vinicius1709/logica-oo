@@ -5,19 +5,15 @@ import br.com.logica.zoologico.classes.Animal;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		// Criando uma nova instancia do objeto
-		Animal a1 = new Animal();
+		Animal cachorro = new Animal("Nina", "Cachorro", 2);
 		
-		// Atribuindo os valores as propriedades
-		a1.setNome("Nina");
-		a1.setEspecie("Cachorro");
-		a1.setIdade(3);
+		System.out.println("Olá o nome do meu animal é " + cachorro.getNome());
 		
-		System.out.println("Olá o nome do meu animal é " + a1.getNome());
+		cachorro.emitirSom();
 		
-		a1.emitirSom();
-		
-		if(a1.isAdulto()) {
+		if(cachorro.isAdulto()) {
 			System.out.println("É adulto");
 		} else {
 			System.out.println("Não é adulto");
@@ -26,18 +22,13 @@ public class Main {
 		System.out.println("--------------------------------");
 		
 		// Criando uma nova instancia do objeto
-		Animal a2 = new Animal();
+		Animal gato = new Animal("Zorro", "Gato", 1);
 		
-		// Atribuindo os valores as propriedades
-		a2.setNome("Zorro");
-		a2.setEspecie("Gato");
-		a2.setIdade(1);
+		System.out.println("Olá o nome do meu animal é " + gato.getNome());
 		
-		System.out.println("Olá o nome do meu animal é " + a2.getNome());
+		gato.emitirSom();
 		
-		a2.emitirSom();
-		
-		if(a2.isAdulto()) {
+		if(gato.isAdulto()) {
 			System.out.println("É adulto");
 		} else {
 			System.out.println("Não é adulto");
