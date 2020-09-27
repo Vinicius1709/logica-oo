@@ -34,5 +34,19 @@ public class Main {
 			System.out.println("Não é adulto");
 		}
 		
+		Animal peixe = new Animal("Dory");
+		
+		System.out.println("Olá o nome do meu animal é " + peixe.getNome());
+		
+		peixe.setEspecie("Peixe");
+		peixe.setIdade(1);
+		
+		peixe.emitirSom();
+		
+		if(gato.isAdulto()) {
+			System.out.println("É adulto");
+		} else {
+			System.out.println("Não é adulto");
+		}
 	}
 }

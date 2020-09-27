@@ -8,12 +8,31 @@ public class Animal {
 	private String nome;
 	private String especie;
 	private int idade;
+
+	// Construtor padrão java
+	// NÃO DEVE ULTILIZAR
+	public Animal() {
+
+	}
+	
+	public Animal(String nome) {
+		this.nome = nome;
+	}
+	
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+	
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
 	
 	public Animal(String nome, String especie, int idade) {
 		this.nome = nome;
 		this.especie = especie;
 		this.idade = idade;
 	}
+	
 	
 	public String getNome() {
 		return nome;
