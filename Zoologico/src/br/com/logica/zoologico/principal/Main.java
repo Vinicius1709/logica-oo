@@ -13,6 +13,18 @@ public class Main {
 		a1.setEspecie("Cachorro");
 		a1.setIdade(3);
 		
+		System.out.println("Olá o nome do meu animal é " + a1.getNome());
+		
+		a1.emitirSom();
+		
+		if(a1.isAdulto()) {
+			System.out.println("É adulto");
+		} else {
+			System.out.println("Não é adulto");
+		}
+		
+		System.out.println("--------------------------------");
+		
 		// Criando uma nova instancia do objeto
 		Animal a2 = new Animal();
 		
@@ -21,6 +33,15 @@ public class Main {
 		a2.setEspecie("Gato");
 		a2.setIdade(1);
 		
-		System.out.println("Olá o nome do meu animal é "+ a2.getNome());
+		System.out.println("Olá o nome do meu animal é " + a2.getNome());
+		
+		a2.emitirSom();
+		
+		if(a2.isAdulto()) {
+			System.out.println("É adulto");
+		} else {
+			System.out.println("Não é adulto");
+		}
+		
 	}
 }
