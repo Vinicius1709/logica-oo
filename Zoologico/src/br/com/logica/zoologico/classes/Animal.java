@@ -9,7 +9,7 @@ public abstract class Animal {
 	private String especie;
 	private String corPelo;
 	private int idade;
-	private boolean estaVivo;
+	protected boolean estaVivo;
 	
 	// Construtor padrão java
 	// NÃO DEVE ULTILIZAR
@@ -65,7 +65,7 @@ public abstract class Animal {
 	
 	public boolean isAdulto() {
 		if(estaVivo) {
-			return idade >= 2;
+			return idade >= 5;
 		}else {
 			return false;
 		}

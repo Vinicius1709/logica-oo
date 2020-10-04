@@ -14,7 +14,11 @@ public class Peixe extends Animal{
 	
 	@Override
 	public void emitirSom() {
-		System.out.println("BlubBlub");
+		if(estaVivo) {
+			System.out.println("BlubBlub");
+		}else {
+			System.out.println("O animal morreu *I try so hard and I got so far, but in the end is doesn´t even matter*");
+		}
 		
 	}
 }

@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// Criando uma nova instancia do objeto
-		Cachorro cachorro = new Cachorro("Nina", "Cachorro", "Branco", 2);
+		Cachorro cachorro = new Cachorro("Nina", "Cachorro", "Branco", 6);
 		
 		System.out.println("Olá o nome do meu animal é " + cachorro.getNome() + " ele tem " + cachorro.getIdade() + " ele é um "
 				+ cachorro.getEspecie() + " e ele tem uma cor " + cachorro.getCorPelo());
