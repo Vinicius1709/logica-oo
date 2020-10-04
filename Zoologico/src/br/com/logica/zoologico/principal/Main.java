@@ -1,15 +1,18 @@
 package br.com.logica.zoologico.principal;
 
-import br.com.logica.zoologico.classes.Animal;
+import br.com.logica.zoologico.heranca.Cachorro;
+import br.com.logica.zoologico.heranca.Gato;
+import br.com.logica.zoologico.heranca.Peixe;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
 		// Criando uma nova instancia do objeto
-		Animal cachorro = new Animal("Nina", "Cachorro", 2);
+		Cachorro cachorro = new Cachorro("Nina", "Cachorro", "Branco", 2);
 		
-		System.out.println("Olá o nome do meu animal é " + cachorro.getNome());
+		System.out.println("Olá o nome do meu animal é " + cachorro.getNome() + " ele tem " + cachorro.getIdade() + " ele é um "
+				+ cachorro.getEspecie() + " e ele tem uma cor " + cachorro.getCorPelo());
 		
 		cachorro.emitirSom();
 		
@@ -22,9 +25,10 @@ public class Main {
 		System.out.println("--------------------------------");
 		
 		// Criando uma nova instancia do objeto
-		Animal gato = new Animal("Zorro", "Gato", 1);
+		Gato gato = new Gato("Zorro", "Gato", "Laranja", 1);
 		
-		System.out.println("Olá o nome do meu animal é " + gato.getNome());
+		System.out.println("Olá o nome do meu animal é " + gato.getNome() + " ele tem " + gato.getIdade() + " ele é um "
+				+ gato.getEspecie() + " e ele tem uma cor " + gato.getCorPelo());
 		
 		gato.emitirSom();
 		
@@ -36,12 +40,12 @@ public class Main {
 		
 		System.out.println("---------------------------------");
 		
-		Animal peixe = new Animal("Dory");
+		Peixe peixe = new Peixe("Dory", "Peixe", "Azul", 2);
 		
-		System.out.println("Olá o nome do meu animal é " + peixe.getNome());
+		System.out.println("Olá o nome do meu animal é " + peixe.getNome() + " ele tem " + peixe.getIdade() + " ele é um "
+				+ peixe.getEspecie() + " e ele tem uma cor " + peixe.getCorPelo());
 		
-		peixe.setEspecie("Peixe");
-		peixe.setIdade(1);
+		System.out.println("BEIJE O PEIXE!!!");
 		
 		peixe.emitirSom();
 		

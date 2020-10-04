@@ -7,12 +7,22 @@ public abstract class Animal {
 	// Neste momento as propriedades são públicas
 	private String nome;
 	private String especie;
+	private String corPelo;
 	private int idade;
-
+	
 	// Construtor padrão java
 	// NÃO DEVE ULTILIZAR
-	public Animal() {
-
+	/*
+	 * public Animal() {
+	 * 
+	 * }
+	 */
+	
+	public Animal(String nome, String especie, String corPelo, int idade) {
+		this.nome = nome;
+		this.especie = especie;
+		this.corPelo = corPelo;
+		this.idade = idade;
 	}
 	
 	public Animal(String nome) {
@@ -23,13 +33,11 @@ public abstract class Animal {
 		this.especie = especie;
 	}
 	
-	public void setIdade(int idade) {
-		this.idade = idade;
+	public void setCorPelo(String corPelo) {
+		this.corPelo = corPelo;
 	}
 	
-	public Animal(String nome, String especie, int idade) {
-		this.nome = nome;
-		this.especie = especie;
+	public void setIdade(int idade) {
 		this.idade = idade;
 	}
 	
@@ -40,6 +48,10 @@ public abstract class Animal {
 	
 	public String getEspecie() {
 		return especie;
+	}
+	
+	public String getCorPelo() {
+		return corPelo;
 	}
 	
 	public int getIdade() {
