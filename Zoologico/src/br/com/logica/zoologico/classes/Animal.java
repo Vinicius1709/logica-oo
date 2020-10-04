@@ -8,7 +8,7 @@ public abstract class Animal {
 	private String nome;
 	private String especie;
 	private String corPelo;
-	private int idade;
+	protected int idade;
 	protected boolean estaVivo;
 	
 	// Construtor padrão java
@@ -64,12 +64,13 @@ public abstract class Animal {
 	public abstract void emitirSom();
 	
 	public boolean isAdulto() {
-		if(estaVivo) {
-			return idade >= 5;
-		}else {
-			return false;
+			if(estaVivo) {
+				return idade >=2;
+			}else {
+				return false;
+			}
 		}
-	}
+	
 	
 	public boolean isEstaVivo() {
 		return estaVivo;

@@ -9,12 +9,12 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// Criando uma nova instancia do objeto
-		Cachorro cachorro = new Cachorro("Nina", "Cachorro", "Branco", 6);
+		Cachorro cachorro = new Cachorro("Nina", "Cachorro", "Branco", 4);
 		
 		System.out.println("Olá o nome do meu animal é " + cachorro.getNome() + " ele tem " + cachorro.getIdade() + " ele é um "
 				+ cachorro.getEspecie() + " e ele tem uma cor " + cachorro.getCorPelo());
 		
-		cachorro.morrer();
+		//cachorro.morrer();
 		cachorro.emitirSom();
 		
 		if(cachorro.isAdulto()) {
@@ -33,7 +33,7 @@ public class Main {
 		System.out.println("Olá o nome do meu animal é " + gato.getNome() + " ele tem " + gato.getIdade() + " ele é um "
 				+ gato.getEspecie() + " e ele tem uma cor " + gato.getCorPelo());
 		
-		gato.morrer();
+		//gato.morrer();
 		gato.emitirSom();
 		
 		if(gato.isAdulto()) {
@@ -53,7 +53,7 @@ public class Main {
 		
 		System.out.println("BEIJE O PEIXE!!!");
 		
-		peixe.morrer();
+		//peixe.morrer();
 		peixe.emitirSom();
 		
 		if(gato.isAdulto()) {

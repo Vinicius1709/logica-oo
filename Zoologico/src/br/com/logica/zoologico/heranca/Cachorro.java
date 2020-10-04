@@ -21,4 +21,12 @@ public class Cachorro extends Animal {
 		}
 		
 	}
+	
+	public boolean isAdulto() {
+		if(isEstaVivo()) {
+			return idade> 2;
+		}else {
+			return false;
+		}
+	}
 }

@@ -21,4 +21,12 @@ public class Peixe extends Animal{
 		}
 		
 	}
+	
+	public boolean isAdulto() {
+		if(isEstaVivo()) {
+			return idade > 1;
+		}else {
+			return false;
+		}
+	}
 }
