@@ -58,9 +58,7 @@ public abstract class Animal {
 		return idade;
 	}
 	
-	public void emitirSom() {
-		System.out.println("Som do animal");
-	}
+	public abstract void emitirSom();
 	
 	public boolean isAdulto() {
 		return idade >= 1;

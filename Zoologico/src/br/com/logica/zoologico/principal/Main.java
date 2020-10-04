@@ -22,7 +22,7 @@ public class Main {
 			System.out.println("Não é adulto");
 		}
 		
-		System.out.println("--------------------------------");
+		System.out.println("----------------------------------------------------------------------------------");
 		
 		// Criando uma nova instancia do objeto
 		Gato gato = new Gato("Zorro", "Gato", "Laranja", 1);
@@ -38,7 +38,7 @@ public class Main {
 			System.out.println("Não é adulto");
 		}
 		
-		System.out.println("---------------------------------");
+		System.out.println("----------------------------------------------------------------------------------");
 		
 		Peixe peixe = new Peixe("Dory", "Peixe", "Azul", 2);
 		
