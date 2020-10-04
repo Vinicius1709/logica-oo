@@ -14,6 +14,7 @@ public class Main {
 		System.out.println("Olá o nome do meu animal é " + cachorro.getNome() + " ele tem " + cachorro.getIdade() + " ele é um "
 				+ cachorro.getEspecie() + " e ele tem uma cor " + cachorro.getCorPelo());
 		
+		cachorro.morrer();
 		cachorro.emitirSom();
 		
 		if(cachorro.isAdulto()) {
@@ -21,6 +22,8 @@ public class Main {
 		} else {
 			System.out.println("Não é adulto");
 		}
+		
+		System.out.println("Está vivo? " + cachorro.isEstaVivo());
 		
 		System.out.println("----------------------------------------------------------------------------------");
 		
@@ -30,6 +33,7 @@ public class Main {
 		System.out.println("Olá o nome do meu animal é " + gato.getNome() + " ele tem " + gato.getIdade() + " ele é um "
 				+ gato.getEspecie() + " e ele tem uma cor " + gato.getCorPelo());
 		
+		gato.morrer();
 		gato.emitirSom();
 		
 		if(gato.isAdulto()) {
@@ -37,6 +41,8 @@ public class Main {
 		} else {
 			System.out.println("Não é adulto");
 		}
+		
+		System.out.println("Está vivo? " + gato.isEstaVivo());
 		
 		System.out.println("----------------------------------------------------------------------------------");
 		
@@ -47,6 +53,7 @@ public class Main {
 		
 		System.out.println("BEIJE O PEIXE!!!");
 		
+		peixe.morrer();
 		peixe.emitirSom();
 		
 		if(gato.isAdulto()) {
@@ -54,5 +61,7 @@ public class Main {
 		} else {
 			System.out.println("Não é adulto");
 		}
+		
+		System.out.println("Está vivo? " + peixe.isEstaVivo());
 	}
 }

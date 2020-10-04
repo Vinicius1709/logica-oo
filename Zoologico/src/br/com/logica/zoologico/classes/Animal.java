@@ -9,6 +9,7 @@ public abstract class Animal {
 	private String especie;
 	private String corPelo;
 	private int idade;
+	private boolean estaVivo;
 	
 	// Construtor padrão java
 	// NÃO DEVE ULTILIZAR
@@ -23,10 +24,12 @@ public abstract class Animal {
 		this.especie = especie;
 		this.corPelo = corPelo;
 		this.idade = idade;
+		this.estaVivo = true;
 	}
 	
 	public Animal(String nome) {
 		this.nome = nome;
+		this.estaVivo = true;
 	}
 	
 	public void setEspecie(String especie) {
@@ -61,6 +64,18 @@ public abstract class Animal {
 	public abstract void emitirSom();
 	
 	public boolean isAdulto() {
-		return idade >= 1;
+		if(estaVivo) {
+			return idade >= 2;
+		}else {
+			return false;
+		}
+	}
+	
+	public boolean isEstaVivo() {
+		return estaVivo;
+	}
+	
+	public void morrer() {
+		this.estaVivo = false;
 	}
 }
