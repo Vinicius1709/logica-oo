@@ -22,3 +22,13 @@ CREATE   --- INSERT  --- INSERIR
 READ     --- SELECT  --- CONSULTAR
 UPDATE   --- UPDATE  --- ALTERAR
 DELETE   --- DELETE  --- EXCLUIR
+
+-- Inserindo registros 
+
+use zoo;
+
+INSERT INTO animal( especie, idade, estaVivo)values("Leão", 10, 1);
+
+-- Consultando os registros da tabela
+
+SELECT especie, idade, estaVivo FROM animal;
