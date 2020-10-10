@@ -1,7 +1,9 @@
 package br.com.logica.zoologico.classes;
 
-	// Construindo o objeto animal
-public abstract class Animal {
+import br.com.logica.zoologico.interfaces.IAnimal;
+
+// Construindo o objeto animal
+public abstract class Animal implements IAnimal {
 
 	// Atributos ou propiedades do objetos
 	// Neste momento as propriedades são públicas

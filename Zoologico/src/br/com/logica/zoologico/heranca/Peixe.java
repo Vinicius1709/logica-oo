@@ -29,4 +29,8 @@ public class Peixe extends Animal{
 			return false;
 		}
 	}
+	
+	public void morrer() {
+		this.estaVivo = false;
+	}
 }
