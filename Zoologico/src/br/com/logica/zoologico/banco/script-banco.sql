@@ -41,3 +41,7 @@ SELECT especie, idade, estaVivo FROM animal;
 -- Adicionando uma nova coluna
 
 ALTER TABLE animal ADD COLUMN NOME VARCHAR(100);
+
+-- ALterando valor da coluna 
+
+UPDATE animal SET NOME = 'zorro' where codigo = 1;
