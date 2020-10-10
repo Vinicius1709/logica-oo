@@ -1,4 +1,5 @@
 -- Criar schema ou banco
+
 CREATE SCHEMA `zoo` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_mysql500_ci ;
 
 -- Script para criar uma tabela
@@ -32,3 +33,11 @@ INSERT INTO animal( especie, idade, estaVivo)values("Leão", 10, 1);
 -- Consultando os registros da tabela
 
 SELECT especie, idade, estaVivo FROM animal;
+
+-- Buscar todas as colunas da tabela 
+
+SELECT especie, idade, estaVivo FROM animal;
+
+-- Adicionando uma nova coluna
+
+ALTER TABLE animal ADD COLUMN NOME VARCHAR(100);
