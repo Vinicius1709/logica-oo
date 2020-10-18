@@ -67,3 +67,9 @@ qtde int,
 desconto float(10,2),
 primary key(id));    
 -- Fim Criação das Tabelas --  
+
+-- inicio alteração de tabelas --
+alter table cliente add column cidade varchar(50);
+
+-- mostra a estrutura fisica da table --
+describe cliente;
