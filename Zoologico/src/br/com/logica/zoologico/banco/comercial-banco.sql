@@ -71,5 +71,19 @@ primary key(id));
 -- inicio alteração de tabelas --
 alter table cliente add column cidade varchar(50);
 
+alter table cliente add column estado varchar(50);
+
+alter table cliente drop column estado;
+
+alter table cliente add column estado varchar(50);
+
+alter table cliente drop column estado;
+
+alter table cliente modify column estado varchar(100);
+
+alter table cliente modify column estado int;
+
+alter table cliente modify column estado varchar(100);
+
 -- mostra a estrutura fisica da table --
 describe cliente;
