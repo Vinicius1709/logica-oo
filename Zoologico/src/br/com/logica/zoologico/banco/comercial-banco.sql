@@ -285,3 +285,20 @@ select upper(descricao), descricao from produto;
 
 -- completa uma String à direita com um caracter desejado na quantidade desejada -- 
 select rpad(descricao, 10, '***') from produto;
+
+-- Consultas com funções de Data Tempo --
+-- retornar a diferença entre datas - datadiff() -- 
+select datadiff('2015-03-17', '2015-03-15');
+
+-- converter de String para data - str_to_date() --
+select str_to_date("August 05 2017", "%M%e%Y");
+select str_to_date("August,05,2017", "%M%e%Y");
+
+-- consulta a data e hora atual - now() --
+select now();
+
+-- retorna o dia do mês e de uma data -- 
+select dayofmonth(data_venda) from venda;
+
+-- retorna o valor númerico do dia da semana -- 
+select dayofweek(data_venda) from venda;
