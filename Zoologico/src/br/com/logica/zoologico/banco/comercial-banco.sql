@@ -268,3 +268,8 @@ select v.codigo_venda, v.id_vendedor, v.id_cliente, valor
 from venda v
 having valor > 9000
 order by 4 asc;
+
+-- valor maxímo e valor mínimo -max() / min() --
+select max(valor) as 'Maior valor venda', 
+	   min(valor) as 'Menos valor venda'
+from venda;
