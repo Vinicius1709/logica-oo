@@ -245,3 +245,12 @@ select v.valor, v.desconto, v.total, f.nome as 'Nome fornecedor', c.nome as 'Nom
 inner join fornecedor f on v.id_fornecedor = f.id
 inner join cliente c on v.id_cliente = c.id
 inner join vendedor ven on v.id_vendedor = ven.id;
+
+
+-- Colocando Alias -- 
+select v.valor, concat(v.desconto, ' %') as desconto, 
+concat('R$ ', v.total) as total_venda, f.nome as 'Nome fornecedor', c.nome as 'Nome cliente', ven.nome as 'Nome vendedor' from venda v
+
+inner join fornecedor f on v.id_fornecedor = f.id
+inner join cliente c on v.id_cliente = c.id
+inner join vendedor ven on v.id_vendedor = ven.id;
