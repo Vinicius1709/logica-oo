@@ -273,3 +273,6 @@ order by 4 asc;
 select max(valor) as 'Maior valor venda', 
 	   min(valor) as 'Menos valor venda'
 from venda;
+
+-- somar os campos - sum() --
+select sum(valor) as 'Total valor de produtos' from produto;
