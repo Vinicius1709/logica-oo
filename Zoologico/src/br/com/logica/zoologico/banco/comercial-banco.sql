@@ -262,3 +262,9 @@ from produto P;
 
 -- para contar registros - count() --
 select count(*) from produto;
+
+-- verificar quantidade - having count() -- 
+select v.codigo_venda, v.id_vendedor, v.id_cliente, valor
+from venda v
+having valor > 9000
+order by 4 asc;
