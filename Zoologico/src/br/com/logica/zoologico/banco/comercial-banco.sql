@@ -282,3 +282,6 @@ select lower(nome), upper (nome) from cliente;
 
 -- registros em maiusculo upper() --
 select upper(descricao), descricao from produto;
+
+-- completa uma String à direita com um caracter desejado na quantidade desejada -- 
+select rpad(descricao, 10, '***') from produto;
