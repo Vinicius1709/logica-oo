@@ -276,3 +276,9 @@ from venda;
 
 -- somar os campos - sum() --
 select sum(valor) as 'Total valor de produtos' from produto;
+
+-- registros em minusculo lcase() / loer() --
+select lower(nome), upper (nome) from cliente;
+
+-- registros em maiusculo upper() --
+select upper(descricao), descricao from produto;
